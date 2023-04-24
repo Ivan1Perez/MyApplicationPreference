@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application Preference</string>
+    <string name="standard">Estandar</string>
+    <string name="imperial">Imperial</string>
+    <string name="metric">Metrica</string>
+    <string name="default_string">Por defecto</string>
+    <string name="light">Claro</string>
+    <string name="dark">Oscuro</string>
+</resources>
