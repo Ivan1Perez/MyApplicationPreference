@@ -38,4 +38,8 @@ public class MyPreferenceManager {
         return preferences.getBoolean("switch_preference_key", false);
     }
 
+    public String getUnitsListPreference(){
+        return preferences.getString("unidades_key", "standard");
+    }
+
 }

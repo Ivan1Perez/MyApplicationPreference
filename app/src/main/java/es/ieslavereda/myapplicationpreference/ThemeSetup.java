@@ -23,7 +23,7 @@ public class ThemeSetup {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
                 break;
             case DEFAULT:
-                if(Build.VERSION.SDK_INT < Build.VERSION_CODES.Q)
+                if(android.os.Build.VERSION.SDK_INT < Build.VERSION_CODES.Q)
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_AUTO_BATTERY);
                 else AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
                 break;

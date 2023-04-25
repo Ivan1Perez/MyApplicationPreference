@@ -34,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
         textView.setText(
                 "EditTextPreference: " + MyPreferenceManager.getInstance(getApplicationContext()).getEditText() + "\n" +
                 "CheckBox: " + MyPreferenceManager.getInstance(getApplicationContext()).getCheckbox() + "\n" +
-                "SwitchPreference: " + MyPreferenceManager.getInstance(getApplicationContext()).getSwitchPreference()
+                "SwitchPreference: " + MyPreferenceManager.getInstance(getApplicationContext()).getSwitchPreference() +"\n" +
+                "ListPreference: " + MyPreferenceManager.getInstance(getApplicationContext()).getUnitsListPreference()
         );
     }
 

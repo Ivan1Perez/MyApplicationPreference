@@ -20,5 +20,12 @@
             android:defaultValue="false"
             android:key="switch_preference_key"
             android:title="Switch preference"/>
+        <ListPreference
+            android:defaultValue="standard"
+            android:entries="@array/unidades_entries"
+            android:entryValues="@array/unidades_values"
+            android:key="unidades_key"
+            android:summary="Unidades en"
+            android:title="Unidades" />
     </PreferenceCategory>
 </PreferenceScreen>
