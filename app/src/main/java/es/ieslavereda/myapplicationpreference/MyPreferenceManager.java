@@ -42,4 +42,8 @@ public class MyPreferenceManager {
         return preferences.getString("unidades_key", "standard");
     }
 
+    public String getTheme(){
+        return preferences.getString("themes_key", "default_string");
+    }
+
 }

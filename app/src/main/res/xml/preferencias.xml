@@ -27,5 +27,14 @@
             android:key="unidades_key"
             android:summary="Unidades en"
             android:title="Unidades" />
+
+        <ListPreference
+            android:defaultValue="default_string"
+            android:entries="@array/theme_entries"
+            android:entryValues="@array/theme_values"
+            android:key="themes_key"
+            android:title="Themes"
+        />
+
     </PreferenceCategory>
 </PreferenceScreen>

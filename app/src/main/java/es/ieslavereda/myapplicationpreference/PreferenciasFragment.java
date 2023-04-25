@@ -33,14 +33,14 @@ public class PreferenciasFragment extends PreferenceFragmentCompat {
 
 
         // Theme preferences with ListPreference
-//        ListPreference themePreference = getPreferenceManager().findPreference("unidades_key");
-//        if (themePreference.getValue() == null) {
-//            themePreference.setValue(ThemeSetup.Mode.DEFAULT.name());
-//        }
-//        themePreference.setOnPreferenceChangeListener((p,v)->{
-//            ThemeSetup.applyTheme(ThemeSetup.Mode.valueOf((String)v));
-//            return true;
-//        });
+        ListPreference themePreference = getPreferenceManager().findPreference("themes_key");
+        if (themePreference.getValue() == null) {
+            themePreference.setValue(ThemeSetup.Mode.DEFAULT.name());
+        }
+        themePreference.setOnPreferenceChangeListener((p,v)->{
+            ThemeSetup.applyTheme(ThemeSetup.Mode.valueOf((String)v));
+            return true;
+        });
 
     }
 }

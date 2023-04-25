@@ -1,5 +1,6 @@
 package es.ieslavereda.myapplicationpreference;
 
+import android.content.Context;
 import android.os.Build;
 
 import androidx.appcompat.app.AppCompatDelegate;
@@ -28,6 +29,11 @@ public class ThemeSetup {
                 else AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
                 break;
         }
+    }
+
+    public static void applyPreferenceTheme(Context context) {
+
+        applyTheme(Mode.valueOf(MyPreferenceManager.getInstance(context).getTheme()));
     }
 
 }
